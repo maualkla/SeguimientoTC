@@ -1,0 +1,1194 @@
+/* ************************************************************************
+ESTILO DEL LOGIN.HTML:
+EL ESTILO DE ESA PAGINA CONSISTE EN LOS SIGIOENTES COMPONENTES */
+
+/* LOGIN STYLE */
+.loginpad /* MARGEN Y TAMAÑO DEL CONTENEDOR LOGINPAD */
+{
+    padding-top: 0%;
+    margin: 50px auto;
+    margin-top: 15%;
+	width: 300px;
+    box-shadow: 0px 3px 20px #232323;
+    -webkit-box-shadow: 0px 3px 20px #232323;
+    -moz-box-shadow: 0px 3px 20px #232323;
+    border-radius: 0px 0px 10px 10px;
+}
+h1 /* MARGEN DEL TITULO */
+{
+    margin: 0;
+}
+.loginpad h1 
+{
+	background-color: #282830;
+	color: #fff;
+	font-size: 14px;
+	padding: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#field 
+{
+	background: #ffffff;
+	border-radius: 0 0 5px 5px;
+	padding: 10px;
+	position: relative;
+    border: none;
+	margin: 0;
+}
+#field:before 
+{
+	background-color: #fff;
+	content: "";
+	height: 8px;
+	left: 50%;
+	margin: -4px 0 0 -4px;
+	position: absolute;
+	top: 0;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	width: 8px;
+}
+.inputs input
+{
+	font-family: inherit;
+	font-size: inherit;
+	margin: 0;
+	outline: none;
+	-webkit-appearance: none;
+    font-size: 14px;
+}
+#user /* ESTILO INICIAL DE LAS 2 INPUTS*/
+{
+	border-radius: 4px 4px 0px 0px;
+    border: 1px solid #dcdcdc;
+	padding: 12px 10px;
+	width: 238px;
+}
+#password
+{
+	border-radius: 0px 0px 4px 4px;
+    border: 1px solid #dcdcdc;
+	padding: 12px 10px;
+	width: 238px;
+}
+#user:active,#user:hover,#user:focus /* EVENTOS PARA LOS DOS INPUTS */
+{
+    border-style: solid;
+    border-color: deepskyblue;
+}
+#password:active,#password:hover,#password:focus
+{
+    border-style: solid;
+    border-color: deepskyblue;
+}
+.botongeneral /* ESTILO DE BOTON GENERAL, DISPONIBLE PARA TODO EL SITIO */
+{	
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+	background:#1CC6BC;
+    border:2px;
+	border-color: #ffffff;
+    width:80px;
+    height:40px;
+    color: #ffffff;
+	font-weight: bold; 
+}
+.botongeneral:active /* ESTILO DE BOTON GRANDE CUANDO ESTA ACTIVO */
+{
+    width:82px;
+    height:41px;
+    border-color: deepskyblue;
+}
+.botongeneral:hover /* ESTILO DE BOTON GRANDE CUANDO EL PUNTERO FLOTA SOBLE EL */
+{
+	background:#19BFB5;
+    cursor: pointer;
+}
+#iniciodesesion p
+{
+    text-align: center;
+    color: #282830;
+    border-style: solid;
+    border-color: #282830;
+    border-width: 3px;
+    border-radius: 4px 4px 4px 4px;
+}
+b
+{
+    display: none;
+}
+
+body /* BODY GENERAL DEL SITIO */
+{
+	font-family: Helvetica;
+	margin: 0px;
+	border: 2;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+
+
+
+/* ************************************************************************
+ESTILO DE ELEMENTOS GENERALES:
+EL ESTILO DE ESA PAGINA CONSISTE EN LOS SIGUIENTES COMPONENTES */
+.botonpb /* BOTONES PEQUEÑOS DEFAULT*/
+{
+    border-style: hidden;
+    width: 30px;
+    height: 30;
+    width: 30;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: none;
+}
+.botonpb:active /* BOTONES PEQUEÑOS CUANDO ESTAN ACTIVOS */
+{
+    border:2px;
+    border-style: dotted;
+    border-radius: 15px 15px 15px 15px;
+    border-color: #ffffff;
+	font-weight: bold;
+}
+.botonpb:hover /* BOTONES PEQUEÑOS CUANDO EL PUNTERO FLOTA SOBRE EL */
+{
+    cursor: pointer;
+}
+#botontable/*BOTON DE ESTADO */
+{
+    border-radius: 0px 0px 0px 0px;
+    background-image: url(data/cuadrado.svg);
+}
+#botontable:active
+{
+    background-image: url(data/cuadradoa.svg);
+}
+mas /* BOTON MAS */
+{
+    border-radius: 0px 0px 0px 0px;
+    background-image: url(data/mas.svg);
+}
+/*BOTON DE CONTENIDO*/
+.botoncontenido
+{	
+    border-radius: 2px 2px 2px 2px;
+    cursor: pointer;
+	background:#1CC6BC;
+    border:2px;
+	border-color: #ffffff;
+    width:80px;
+    height:auto;
+    color: #ffffff;
+	font-weight: bold; 
+    margin-right: 10px;
+}
+.botoncontenido:active
+{
+	background:#1CC6BC;
+    border:4px;
+    border-color: #ffff11;
+	font-weight: bold;
+}
+.botoncontenido:hover
+{
+	background:#19BFB5;
+    cursor: pointer;
+}
+
+/* ESTILO DE LAS INPUTS GENERALES */
+
+
+/* ************************************************************************
+ESTILO DEL INDEX.HTML:
+EL ESTILO DE ESA PAGINA CONSISTE EN LOS SIGIOENTES COMPONENTES */
+
+/* HEADER Y BANNER - EL ESTILO DEL BANNER DEPENDIENDO DE LA RESOLUCION DE LA PANTALLA (RESPONSIVO)
+*/
+@media (min-width:901px)
+{
+    .banner
+    {
+        
+    }
+	.rectangulo 
+	{
+     width: 100%; 
+     height: 15px;
+	 top: 0;
+	 right: 0;
+     background: #686868;
+	 margin: 0;
+	 padding: 0;
+	 position: fixed;
+        
+	}
+	.navbar
+	{
+  		margin: 0px;
+  		padding: 0px;
+  		overflow: hidden;
+  		list-style: none;
+  		font-family: Helvetica, Arial, sans-serif;
+		font-size: 12px;
+		position: fixed;
+		width: 100%;
+		left: 0;
+		right: 0;
+		top: 15px;
+	}
+	
+	.navbar .title
+	{
+    	color: #ffffff;
+    	font-weight:800;
+		padding: 0px 20PX;
+		font-size: 16px;
+    
+	}
+
+	.navbar .mostrar
+	{
+		display: inline-block;
+	}
+	
+	.navbar .ocultar
+	{
+		display: inline-block;
+	}
+  
+	.navbar ul
+  	{
+		list-style-type: none;
+  		background-color: #282830;
+		margin: 0;
+		padding: 0;
+		position: relative;
+  	}
+	
+	.navbar ul li
+  	{
+    	display: inline-block;
+		padding: 0;
+    	margin: 0;
+		text-align: center;
+  	}
+    #pen1
+    {
+        text-decoration: underline;
+    }
+	.navbar a
+  	{
+    	display: inline-block;
+		text-decoration: none;
+		color:   #C2C2C2;
+    	padding: 15px;
+		font-size: 16px;
+  	}
+    
+    .navbar a:hover
+	{
+    	color: #f2f2f2;
+	}	
+	
+    .navbar .icon
+	{
+    	display:none;
+	}
+	
+    .navbar .main > li:last-child
+	{
+    	float: right;
+    }
+	
+    .navbar ul.dropDown
+    {
+		width: 100%;
+  		background-color:  #262626;
+		text-align: center;
+    	float: center;
+    	padding: 0;
+    	align-self: center;
+    	width: 100%;
+		display: block;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        
+    }
+  
+    .navbar .dropDown li
+	{
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+  
+	
+ 
+    .navbar #drop
+	{
+		display: none;
+	}
+	.triangulo
+	{
+	 display:inline-block;	
+	 width: 0; 
+     height: 0;
+	 margin-left:10px;
+     border-left: 7px solid transparent;
+     border-top: 9px solid #C2C2C2; 
+	 border-right: 7px solid transparent;
+	}
+	#useri
+	{
+		display: inline-block;
+		margin-right: 5px;
+	}
+	.contenido /* Propiedades generales de contenido */
+	{
+			margin-top: 100px;
+			margin-right: 40px;
+			margin-left: 40px;
+			margin-bottom: 100px;
+	}
+    /* ******************************************************************************************************************************* TABLA
+    */
+	.datagrid2 table 
+	{ 
+		border-collapse: collapse; text-align: left; width: 90%; text-align: center;
+	} 
+	
+	
+	.datagrid2
+	{
+		font: normal 15px/150% Arial, Helvetica, sans-serif; background: #fff; overflow-x: auto;
+	}
+	
+	.datagrid2 table td, .datagrid2 table th 
+	{ 
+		padding: 1px 0px; 
+	}
+	
+	.datagrid2 table thead th 
+	{
+		background-color:#828282; color:#FFF0F3; font-size: 12px; font-weight: normal; border: 1px solid #A3A3A3; 
+	}
+	.datagrid2 #button
+	{
+		background-color: #ffff;
+		border: 0px;
+	}
+	.datagrid2 table tbody td 
+	{ 
+		color: #525252; border: 1px solid #DBDBDB;font-size: 15px;font-weight: normal; 
+	}
+    #registros table td
+    {
+        margin: 20px;
+        background-color: #F5F5F5;
+    }
+    .texto/* INPUTS DE LAS TABLAS */
+    {
+        border-radius: 3px 3px 3px 3px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #BDBDBD;
+        font-size: 16px;
+        height: 26px;
+    }
+    #contextual /* ESTE ES EL MENU CONTEXTUAL PARA PODER MODIFICAR LOS DATOS DE LA TABLA */
+    {
+        text-align: center;
+        margin-top: 0px;
+        margin-left: 30%;
+        padding: 10px;
+        width: 40%;
+        background-color: #282830;
+        border-radius: 6px 0px 6px 0px;
+        position: fixed;
+        display: none;
+        z-index: 100;
+        animation: mymove 5s infinite;
+        -webkit-box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+        -moz-box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+        box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+    }
+    #contextual p a /* EL ESTILO DE LAS OPCIONES POR DEFAULT */
+    {
+        color: #ffffff;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    #contextual p a:active /* ESTILO DE LAS OPCIONES CUANDO ESTAN ACTIVAS */
+    {
+        color: #ffffff;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    #contextual2 /* ESTE ES EL MENU CONTEXTUAL PARA PODER MODIFICAR LOS DATOS DE LA TABLA ************************************************SEGUNDO  */
+    {
+        text-align: center;
+        margin-top: 0px;
+        margin-left: 30%;
+        padding: 10px;
+        width: 40%;
+        background-color: #282830;
+        border-radius: 6px 0px 6px 0px;
+        position: fixed;
+        display: none;
+        z-index: 100;
+        animation: mymove 5s infinite;
+        -webkit-box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+        -moz-box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+        box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+    }
+    #contextual2 p a /* EL ESTILO DE LAS OPCIONES POR DEFAULT */
+    {
+        color: #ffffff;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    #contextual2 p a:active /* ESTILO DE LAS OPCIONES CUANDO ESTAN ACTIVAS */
+    {
+        color: #ffffff;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    #contextual3 /* ESTE ES EL MENU CONTEXTUAL PARA PODER MODIFICAR LOS DATOS DE LA TABLA *************************************************TERCERO*/
+    {
+        text-align: center;
+        margin-top: 0px;
+        margin-left: 30%;
+        padding: 10px;
+        width: 40%;
+        background-color: #282830;
+        border-radius: 6px 0px 6px 0px;
+        position: fixed;
+        display: none;
+        z-index: 100;
+        animation: mymove 5s infinite;
+        -webkit-box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+        -moz-box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+        box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+    }
+    #contextual3 p a /* EL ESTILO DE LAS OPCIONES POR DEFAULT */
+    {
+        color: #ffffff;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    #contextual3 p a:active /* ESTILO DE LAS OPCIONES CUANDO ESTAN ACTIVAS */
+    {
+        color: #ffffff;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    #contextual4 /* ESTE ES EL MENU CONTEXTUAL PARA PODER MODIFICAR LOS DATOS DE LA TABLA **************************************************CUARTO*/
+    {
+        text-align: center;
+        margin-top: 0px;
+        margin-left: 30%;
+        padding: 10px;
+        width: 40%;
+        background-color: #282830;
+        border-radius: 6px 0px 6px 0px;
+        position: fixed;
+        display: none;
+        z-index: 100;
+        animation: mymove 5s infinite;
+        -webkit-box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+        -moz-box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+        box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+    }
+    #contextual4 p a /* EL ESTILO DE LAS OPCIONES POR DEFAULT */
+    {
+        color: #ffffff;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    #contextual4 p a:active /* ESTILO DE LAS OPCIONES CUANDO ESTAN ACTIVAS */
+    {
+        color: #ffffff;
+        font-size: 15px;
+        cursor: pointer;
+    }
+       /* ******************************************************************************************************************************* TABLA
+    */
+	.datagrid table 
+	{ 
+		border-collapse: collapse; text-align: left; width: 90%; text-align: center;
+	} 
+	
+	
+	.datagrid
+	{
+		font: normal 15px/150% Arial, Helvetica, sans-serif; background: #fff; overflow-x: auto;
+	}
+	
+	.datagrid table td, .datagrid table th 
+	{ 
+		padding: 1px 0px; 
+	}
+	
+	.datagrid table thead th 
+	{
+		background-color:#828282; color:#FFF0F3; font-size: 12px; font-weight: normal; border: 1px solid #A3A3A3; 
+	}
+	.datagrid #button
+	{
+		background-color: #ffff;
+		border: 0px;
+	}
+	.datagrid table tbody td 
+	{ 
+		color: #525252; border: 1px solid #DBDBDB;font-size: 15px;font-weight: normal; 
+	}
+    #registro table td
+    {
+        margin: 20px;
+        background-color: #F5F5F5;
+    }
+    .texto/* INPUTS DE LAS TABLAS */
+    {
+        border-radius: 3px 3px 3px 3px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #BDBDBD;
+        font-size: 16px;
+        height: 26px;
+    }
+    
+}
+
+@media screen and (max-width:900px)
+{
+    
+	.rectangulo 
+	{
+     width: 100%; 
+     height: 10px;
+	 top: 0;
+	 right: 0;
+     background: #686868;
+	 margin: 0;
+	 padding: 0;
+	 position: fixed;
+	}
+	.navbar
+	{
+	  margin: 0px;
+	  padding: 0;
+	  overflow: hidden;
+	  list-style: none;
+	  font-family: Helvetica, Arial, sans-serif;
+	  font-size: 12px;
+	  position: fixed;
+	  width: 100%;
+	  top: 10px;
+	  right: 0;
+        box-shadow: 0px 3px 20px #232323;
+        -webkit-box-shadow: 0px 3px 20px #232323;
+        -moz-box-shadow: 0px 3px 20px #232323;
+		
+	}
+	
+	.navbar .title
+	{
+		color: #ffffff;
+		font-weight:800;
+		padding: 10px;
+		font-size: 15px;
+	}
+
+	.navbar ul
+	{
+	  list-style-type: none;
+	  background-color: #232323;
+	  margin: 0;
+	  padding: 0;
+	}
+
+	.navbar li
+	{
+	  padding: 0;
+		margin: 0;
+	  text-align: center;
+	}
+
+	.navbar a
+	{
+	  display: inline-grid;
+	  text-decoration: none;
+	  color:   #C2C2C2;
+	  padding: 12px;
+	  font-size: 14px;
+	}
+
+	.navbar a:hover
+	{
+		color: #f2f2f2;
+	}
+	
+	.navbar .icon
+	{
+		float: right;
+		padding: 0;
+		margin-right: 10px;
+		font-size: 15px;
+		display:inline-block;
+	}
+	
+	.navbar #openMenu
+	{
+		padding-top: 5px;
+		padding-right: 15px;
+		padding-bottom: 5px;
+	}
+
+	.navbar .dropDown
+	{
+	  width: 100%;
+	  background-color:  #262626;
+	  text-align: center;
+	  padding: 0;
+	  float: center;
+	  display: none;
+	}
+	
+	.navbar .ocultar
+	{
+		display: none;
+	}
+	.navbar .mostrar
+	{
+		display: block;
+	}
+	.navbar #drop
+	{
+		display: none;
+	}
+	.triangulo
+	{
+	 display:inline-block;	
+     position:fixed;
+	 width: 0; 
+     height: 0;
+	 margin-left: 8px;
+	 margin-top: 3px;
+     border-left: 5px solid transparent;
+     border-top: 7px solid #C2C2C2; 
+	 border-right: 5px solid transparent;
+	}
+	#useri
+	{
+		display:inline-block;	
+     	position:fixed;
+		margin-top: 11px;
+	    margin-left: -8px;
+	}
+	.contenido /* Propiedades generales de contenido */
+	{
+			margin-top: 80px;
+			margin-right: 10px;
+			margin-left: 10px;
+			margin-bottom: 80px;
+	}
+    #contextual /* ESTE ES EL MENU CONTEXTUAL PARA PODER MODIFICAR LOS DATOS DE LA TABLA ******************************************* PRIMERO ****/
+    {
+        text-align: center;
+        margin-top: 0px;
+        margin-left: 30%;
+        padding: 10px;
+        width: 40%;
+        background-color: #282830;
+        border-radius: 6px 0px 6px 0px;
+        position: fixed;
+        display: none;
+        z-index: 100;
+        animation: mymove 5s infinite;
+        -webkit-box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+        -moz-box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+        box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+    }
+    #contextual p a /* EL ESTILO DE LAS OPCIONES POR DEFAULT */
+    {
+        color: #ffffff;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    #contextual p a:active /* ESTILO DE LAS OPCIONES CUANDO ESTAN ACTIVAS */
+    {
+        color: #ffffff;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    #contextual2 /* ESTE ES EL MENU CONTEXTUAL PARA PODER MODIFICAR LOS DATOS DE LA TABLA ************************************************SEGUNDO  */
+    {
+        text-align: center;
+        margin-top: 0px;
+        margin-left: 30%;
+        padding: 10px;
+        width: 40%;
+        background-color: #282830;
+        border-radius: 6px 0px 6px 0px;
+        position: fixed;
+        display: none;
+        z-index: 100;
+        animation: mymove 5s infinite;
+        -webkit-box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+        -moz-box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+        box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+    }
+    #contextual2 p a /* EL ESTILO DE LAS OPCIONES POR DEFAULT */
+    {
+        color: #ffffff;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    #contextual2 p a:active /* ESTILO DE LAS OPCIONES CUANDO ESTAN ACTIVAS */
+    {
+        color: #ffffff;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    #contextual3 /* ESTE ES EL MENU CONTEXTUAL PARA PODER MODIFICAR LOS DATOS DE LA TABLA *************************************************TERCERO*/
+    {
+        text-align: center;
+        margin-top: 0px;
+        margin-left: 30%;
+        padding: 10px;
+        width: 40%;
+        background-color: #282830;
+        border-radius: 6px 0px 6px 0px;
+        position: fixed;
+        display: none;
+        z-index: 100;
+        animation: mymove 5s infinite;
+        -webkit-box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+        -moz-box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+        box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+    }
+    #contextual3 p a /* EL ESTILO DE LAS OPCIONES POR DEFAULT */
+    {
+        color: #ffffff;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    #contextual3 p a:active /* ESTILO DE LAS OPCIONES CUANDO ESTAN ACTIVAS */
+    {
+        color: #ffffff;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    #contextual4 /* ESTE ES EL MENU CONTEXTUAL PARA PODER MODIFICAR LOS DATOS DE LA TABLA **************************************************CUARTO*/
+    {
+        text-align: center;
+        margin-top: 0px;
+        margin-left: 30%;
+        padding: 10px;
+        width: 40%;
+        background-color: #282830;
+        border-radius: 6px 0px 6px 0px;
+        position: fixed;
+        display: none;
+        z-index: 100;
+        animation: mymove 5s infinite;
+        -webkit-box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+        -moz-box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+        box-shadow: 0px 0px 300px 10000px rgba(0,0,0,0.41);
+    }
+    #contextual4 p a /* EL ESTILO DE LAS OPCIONES POR DEFAULT */
+    {
+        color: #ffffff;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    #contextual4 p a:active /* ESTILO DE LAS OPCIONES CUANDO ESTAN ACTIVAS */
+    {
+        color: #ffffff;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    /* ******************************************************************************************************************************* TABLA
+    */
+	.datagrid2 table 
+	{ 
+		border-collapse:collapse; text-align: left; width: 100%; text-align: center;
+	} 
+	
+	.datagrid2
+	{
+		font: normal 8px/100% Arial, Helvetica, sans-serif; background: #fff; overflow-x: scroll; 
+	}
+	
+	.datagrid2 table td, .datagrid2 table th 
+	{ 
+		padding: 5px 10px; 
+	}
+	
+	.datagrid2 table thead th 
+	{
+		background-color:#828282; color:#FFF0F3; font-size: 12px; font-weight: normal; border: 1px solid #A3A3A3; 
+	}
+	.datagrid2 #button
+	{
+		background-color: #ffff;
+		border: 0px;
+	}
+	.datagrid2 table tbody td 
+	{ 
+		color: #525252; border: 1px solid #DBDBDB;font-size: 14px;font-weight: normal; 
+	}
+    #registros table td
+    {
+        margin: 20px;
+        background-color: #F5F5F5;
+    }
+    .texto/* INPUTS DE LAS TABLAS */
+    {
+        border-radius: 3px 3px 3px 3px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #BDBDBD;
+        font-size: 16px;
+        height: 26px;
+    }
+     /* ******************************************************************************************************************************* TABLA
+    */
+	.datagrid table 
+	{ 
+		border-collapse:collapse; text-align: left; width: 100%; text-align: center;
+	} 
+	
+	.datagrid
+	{
+		font: normal 8px/100% Arial, Helvetica, sans-serif; background: #fff; overflow-x: scroll;width: 100%; 
+	}
+	
+	.datagrid table td, .datagrid table th 
+	{ 
+		padding: 5px 0px; 
+	}
+	
+	.datagrid table thead th 
+	{
+		background-color:#828282; color:#FFF0F3; font-size: 12px; font-weight: normal; border: 1px solid #A3A3A3; 
+	}
+	.datagrid #button
+	{
+		background-color: #ffff;
+		border: 0px;
+	}
+	.datagrid table tbody td 
+	{ 
+		color: #525252; border: 1px solid #DBDBDB;font-size: 14px;font-weight: normal; 
+	}
+    #registro table td
+    {
+        margin: 20px;
+        background-color: #F5F5F5;
+    }
+    .texto/* INPUTS DE LAS TABLAS */
+    {
+        border-radius: 3px 3px 3px 3px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #BDBDBD;
+        font-size: 16px;
+        height: 26px;
+    }
+}
+
+/* CONTENIDO DE LA PAGINA EL CUAL CONTIENE TABLAS, BOTONES DE BUSQUEDA Y GUARDADO, ASI COMO EL PANEL DE HERRAMIENTAS
+*/
+
+#usuarios
+{
+    display: none;
+    background-color: red;
+    z-index: 100;
+}
+#liberados
+{
+    display: none;
+    background-color: red;
+    z-index: 100;
+}
+#usuarios table
+{
+    align-items: stretch;
+}
+
+
+#data
+{
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+}
+
+.panelbusqueda/* MARGENES Y CONTENEDOR DE EL PANEL DE BUSQUEDA */
+{
+    margin-top: 35%;
+    margin-left: 30px;
+    margin-right: 400px;
+    margin-bottom: 20px;
+    position: fixed;
+}
+#toolbox /* PROPIEDADES DE LA TABLA TOOLBOX QUE CONTIENE TODOS LOS ELEMENTOS */
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #BDBDBD;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    vertical-align: bottom;
+    background-color: #ffffff;
+}
+#ira /*Caja de texto dentro del panel de busqueda */
+{
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #BDBDBD;
+    background-color: #ffffff;
+    font-size: 12px;
+    width: 30px;
+    vertical-align:super;
+}
+#nudepa /* ESTILO DEL LABEL NUMERO DE PAGINA*/
+{
+    border-radius: 4px 4px 4px 4px;
+    font-size: 12px;
+    color: #3f3f3f;
+    border-style: hidden;
+    border-width: 1px;
+    border-color: #3f3f3f;
+    background-color: #ffffff;
+}
+
+footer 
+{
+    position:fixed;
+    width: 100%;
+    background-color: #282830;
+    height: 20px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    margin: 0;
+    bottom: 0;
+}
+footer a,p
+{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+/* PAGINA CARGAR.HTML */
+/*  FORM INTRO */
+.formintro
+{
+    background-color: #dcdcdc;
+    margin-top: 100px;
+    margin-left: 450px;
+    margin-right: 250px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    padding-left: 40px;
+    box-shadow: 0px 3px 20px #232323;
+    -webkit-box-shadow: 0px 3px 20px #232323;
+    -moz-box-shadow: 0px 3px 20px #232323;
+}
+#botoncreate
+{
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* ACTA *********************************************************************************************************************************************/
+.crearnuevaacta
+{
+    width: 100;
+    height: 100%;
+    display: none;
+	background-color:#ffff; 
+	font-family: Helvetica;
+    z-index: 100%;
+}
+#desactivado
+{
+	background-color: #50555b;
+	color: #3c4044;
+	text-shadow: 0px 2px 3px #676d75;
+	cursor: pointer;
+}
+#active
+{
+	color: #3e454f;
+	border-radius: 5px;
+	text-shadow: 0px 2px 3px #bbbbbb;
+	background-color: #ffff;
+	
+}
+.navbarform
+{
+	top: 0;
+	right: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 6%;
+	font-size: 15px;
+}
+.navbarform span
+{
+	padding: 3px;
+}
+.navbarform .campo
+{
+	float: left;
+	width: 47%;
+	text-align: center;
+	padding: 1.5%;
+	
+}
+.navbarform .gabinete
+{
+	float: right;
+	width: 47%;
+	text-align: center;
+	padding: 1.5%;
+}
+
+.info
+{
+	text-align: center;
+	padding: 10px;
+	background-color: #cccc;
+	border-radius: 5px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.info a
+{
+	font-size: 10px;
+	padding: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	color:#fff;
+	border-bottom-color: 
+	text-decoration:none;
+	-webkit-border-radius:4px;	
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	background: #676d75;
+}
+#formcens
+{
+	text-align: center;
+	display: block;
+}
+#formgab
+{
+	text-align: center;
+	display: none;
+}
+.contform
+{
+	margin-top: 15%;
+}
+.buttomacta
+{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+}
+
+/* FORMULARIO DE USUARIOS ****************************************************************************************************************/
+.userform2
+{
+    display: none;
+    font-family: Helvetica;
+	font-size: 15px;
+	text-align: center;
+	width: 400px;
+	margin: auto;
+	margin-top: 5%;
+}
+.userform
+{
+    display: none;
+	font-family: Helvetica;
+	font-size: 15px;
+	text-align: center;
+	width: 400px;
+	margin: auto;
+	margin-top: 5%;
+	
+}
+#userhead
+{
+	width: 300px;
+	background-color: dimgray;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	color: #fff;
+	letter-spacing: 3px;
+	font-weight: bolder;
+	-webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.61);
+	-moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.61);
+	box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.61);
+}
+.newuser
+{
+	margin: auto;
+	width: 300px;
+	padding: 30px;
+	background-color: #cccc;
+	color: dimgray;
+	-webkit-box-shadow: 0px 7px 10px 2px rgba(0,0,0,0.61);
+	-moz-box-shadow: 0px 7px 10px 2px rgba(0,0,0,0.61);
+	box-shadow: 0px 7px 10px 2px rgba(0,0,0,0.61);
+}
+.newuser input, .newuser select
+{
+	margin-top: 10px;
+	border-style: none;
+	padding: 3px;
+	border-radius: 3px;
+}
+#userbuton
+{
+	padding: 10px;
+	background-color: #282828;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 10px;
+}
+
+
+
+
+/*-- 2018 Mariana Quezada Villar y Mauricio Eugenio Alcala Lopez (contacto preguntas.asi@gmail.com) //Departamento de Registro de Nombres Geograficos --*/

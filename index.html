@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <!-- Llamamos a los archivos JS y CSS para dar estilo y funcionalidad a nuestro codigo HTML -->
+		<meta charset="utf-8">
+		<title> Iniciar Sesión - STC </title>
+        <link rel="shortcut icon" href="data/icono.ico">
+		<link rel=StyleSheet href= "css/est.css" type="text/css">
+		<script type = "text/javascript" src="js/funciones.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+	</head>
+	<body bgcolor="#eaeaea" onload="nobackbutton()">
+        <!-- Definimos el objeto con ID Login pad que sera el inicio de sesion -->
+        <div class="loginpad">
+            <h1>SOLO USUARIOS REGISTRADOS</h1> 
+            <fieldset id="field" align="center" >
+                <form name="login" class="inputs" method="post" action="php/index.php">
+                    <input type="email" autofocus id="user" name="user" size="18"  placeholder="Correo" onChange="cambio(user)">
+                    <input type="password" id="password" name="contra" size="18" placeholder="Contraseña" ><br><br>
+                    <input class="botongeneral" type="submit" name="botonlogin" value="ACCEDER">
+                </form>
+            </fieldset>
+        </div>
+	</body>
+</html> 
+<!-- 2018 Mariana Quezada Villar y Mauricio Eugenio Alcala Lopez (contacto preguntas.asi@gmail.com) //Departamento de Registro de Nombres Geograficos -->

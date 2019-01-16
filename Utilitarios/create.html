@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <!-- Llamamos a los archivos JS y CSS para dar estilo y funcionalidad a nuestro codigo HTML -->
+        <meta charset="utf-8">
+        <title>Cargar - Seguimiento TC</title>
+        <link rel="shortcut icon" href="../data/icono.ico">
+        <link rel=StyleSheet href= "../css/est.css" type="text/css">
+        <script type = "text/javascript" src="../js/funciones.js"></script>
+        <script src="../js/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <header class="banner">
+            <div class="rectangulo"></div>
+			<nav class="navbar">
+			  <ul class="main">
+				<li class="title" id="titulo">SEGUIMIENTO TC - CARGA
+				<a href="javascript:void(0);" class="icon" onclick="funcione()">&#9776;</a></li>
+                  <li id="pen" class="ocultar">
+			  </ul>
+			</nav>
+        </header>
+        <div class="formintro">
+            <form name="cargar" method="post" action="create.php">
+                <label for="id_geo"> ID </label><input class="texto" required type="text" name="id_geo" pattern = "[0-9]{12}" ><br>
+                <label for="nombre_geo"> NOMBRE GEOGRAFICO </label><input class="texto" required type="text" name="nombre_geo" pattern = "[A-Z a-z 0-9]{3-255} "><br>
+                <label for="nombre_con"> NOMBRE CONOCIDO</label><input class="texto" type="text" name="nombre_con" pattern = "[A-Z a-z 0-9]{3-255}"><br>
+                <label for="ref_loc"> REFERENCIA </label><input type="text" class="texto" name="ref_loc" pattern = "[A-Z a-z 0-9]{3-255}"><br>
+                <label for="cve_carta50"> CLAVE CARTA 50000 </label><input type="text" class="texto" name="cve_carta50" pattern="[A-Z 0-9]{6}"><br>
+                <label for="fecha_reg"> FECHA DE ENVIO DEL REGISTRO </label><input class="texto" required type="date" name="fecha_reg" ><br>
+                <label for="cve_ter_gen"> CLAVE DE TERMINO GENERICO </label><input class="texto" required type="text" name="cve_ter_gen" pattern="[A-Z]{2}[0-9]{3}"><br>
+                <label for="cve_ent"> CLAVE DE ENTIDAD </label><input class="texto" required type="text" name="cve_ent" pattern = "[0-9]{2}"><br>
+                <label for="cve_mun"> CLAVE DE MUNICIPIO </label><input class="texto" required type="text" name="cve_mun" pattern = "[0-9]{3}"><br>
+                <label for="cve_loc"> CLAVE DE LOCALIDAD </label><input class="texto" required type="text" name="cve_loc" pattern = "[0-9]{4}"><br>
+                <label for="coor_lat_nor"> LATITUD NORTE </label><input class="texto" required type="text" name="coor_lat_nor"pattern = "[0-9]{6}"><br>
+                <label for="coor_lon_or"> LATITUD OESTE </label><input class="texto" required type="text" name="coor_lon_or"pattern = "[0-9]{6}"><br>
+                <label for="sop_ofi"> SOPORTE OFICIAL </label><input class="texto" type="text" name="sop_ofi" pattern = "[A-Z a-z 0-9]{3-255}"><br>
+                <label for="cve_recurso"> CLAVE DE RECURSO </label><input class="texto" required type="text" name="cve_recurso" pattern="(CT|CL|CV|CA)" list="tergen"><br>
+                    <datalist id="tergen">
+                        <option value="CA"></option>
+                        <option value="CL"></option>
+                        <option value="CT"></option>
+                        <option value="CV"></option>
+                    </datalist>
+                <label for="proced_fte"> PROCEDENCIA DE LA FUENTE </label><input class="texto" type="text" name="proced_fte" pattern = "[A-Z a-z 0-9]{3-255}"><br>
+                <label for="obs"> OBSERVACION </label><input class="texto" type="text" name="obs" pattern = "[A-Z a-z 0-9]{3-255}"><br>
+                <input type="submit" class="botongeneral"  id="botoncreate" value="ENVIAR">
+            </form>
+        </div>
+    </body>
+</html>
+
+<!-- 2018 Mariana Quezada Villar y Mauricio Eugenio Alcala Lopez (contacto preguntas.asi@gmail.com) //Departamento de Registro de Nombres Geograficos -->
